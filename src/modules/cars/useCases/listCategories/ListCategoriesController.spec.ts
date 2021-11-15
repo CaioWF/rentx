@@ -33,12 +33,12 @@ describe("List Categories Controller", () => {
       .post("/sessions")
       .send({ email: "admin@rentx.com.br", password: "admin" });
 
-    const { token } = responseToken.body;
+    const { refreshToken } = responseToken.body;
 
     await request(app)
       .post("/categories")
       .send({ name: "category supertest", description: "category supertest" })
-      .set({ Authorization: `Bearer ${token}` });
+      .set({ Authorization: `Bearer ${refreshToken}` });
 
     const response = await request(app).get("/categories");
 
