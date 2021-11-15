@@ -1,3 +1,4 @@
-node_modules
-.vscode
 .env
+.vscode
+coverage
+node_modules

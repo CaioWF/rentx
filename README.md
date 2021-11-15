@@ -1,4 +1,8 @@
-# MAKE REPOSITORY PUBLIC AT FINISH
+# TO DO
+- improve test coverage
+- deploy
+
+# Requisitos
 
 # Cadastro de carro
 
